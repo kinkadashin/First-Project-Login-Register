@@ -1,0 +1,257 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+div {
+    display: block;
+}
+
+/* BACKGROUND */
+
+.screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(18, 18, 20);
+}
+
+.screen-frame {
+    width: 100%;
+    max-width: 1000px;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+}
+
+.screen-margin {
+    width: 100%;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 28px 0 50px;
+}
+
+/* CONTEUDO */
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between; 
+}
+
+@media (max-width:800px) {
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+/* CAIXA DA ESQUERDA */
+
+.content-left {
+    width: 100%;
+    max-width: 480px;
+    background: rgb(32, 32, 36);
+    border-radius: 5px;
+    padding: 64px;
+}
+
+.content-left h1 {
+    color: #FFF;
+    font-size: 25px;
+    margin-bottom: 39px;
+}
+
+/* INPUTS */
+
+.inputs {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 10px;
+}
+
+.textInput > div {
+    display: flex;
+    align-items: center;
+}
+
+.position-relative {
+    flex: 1 1 0;
+    position: relative;
+}
+
+.position-relative > svg {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: rgb(40, 39, 44);
+    font-size: 14px;
+    transition: fill 0.2s ease 0s;
+}
+
+.textInput input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background: rgb(18, 18, 20);
+    border-color: rgb(18, 18, 20);
+    color: rgb(255, 255, 255);
+    padding: 0px 1em 0px 2.65em;
+    border-radius: 5px;
+}
+
+.textInput input:focus {
+    border-color: #61df9d;
+}
+
+.position-relative:hover > svg {
+    fill: #61df9d;
+}
+
+.passwordInput > div {
+    display: flex;
+    align-items: center;
+}
+
+.passwordInput input {
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    background: rgb(18, 18, 20);
+    border-color: rgb(18, 18, 20);
+    color: rgb(255, 255, 255);
+    padding: 0px 1em 0px 2.65em;
+    border-radius: 5px;
+}
+
+.passwordInput input:focus {
+    border-color: #61df9d;
+}
+
+/* TERMS OF USE */
+
+.termsOfUse {
+    margin-top: 14px;
+    color: rgb(204, 204, 204);
+    font-size: 14px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.termsOfUse > .link {
+    margin: 40px 0px 24px;
+    color: #61df9d;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.8;
+    transition: opacity 0.4s ease 0s;
+}
+
+.termsOfUse > .link:hover {
+    opacity: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* BUTTON */
+
+form > button {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+    background: #61df9d;
+    border-radius: 5px;
+    border: 0px;
+    height: 50px;
+    color: rgb(18, 18, 20);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: box-shadow 0.4s ease 0s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color:rgb(18, 18, 20);
+    box-shadow: 0 0 2px #61df9d, 0 0 10px #61df9d, 0 0 20px #61df9d;
+}
+
+/* CONTENT RIGHT */
+
+.content-right {
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding-left: 100px;
+}
+
+@media (max-width:800px) {
+    .content-right {
+        padding: 0;
+    }
+}
+
+.content-right h1 {
+    letter-spacing: 7px;
+    color: #61df9d;
+    margin-bottom: 66px;
+}
+
+.content-right h2 {
+    font-size: 36px;
+    color: #FFF;
+    margin-bottom: 39px;
+}
+
+.content-right p {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgb(172, 172, 172);
+}
+
+.content-right .back-login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-login {
+    padding-left: 15px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #61df9d;
+    margin: 40px 0px 24px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease 0s;
+}
+
+.back-login:hover {
+    opacity: 1;
+}
+
+.back-login:hover > svg {
+    transform: translateX(-10px);
+    transition: transform 0.4s ease 0s;
+}
