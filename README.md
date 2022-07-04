@@ -11,8 +11,8 @@
 # Inicio
 
 <h1 align="center">
-    <img alt="Readme" title="Readme" src="./assets/video/firstvideo.gif">
-    <img alt="Readme" title="Readme" src="./assets/video/secondvideo.gif">
+    <img alt="Readme" title="Readme" src="./assets/firstvideo.gif">
+    <img alt="Readme" title="Readme" src="./assets/secondvideo.gif">
 </h1>
 
 # Sobre
